@@ -84,4 +84,7 @@ prediction<-predict(LinearModel, testSet)
      
 #ver as prediciotns
 prediction
-     
+
+#plotar pra ver se há uma boa relação
+plot(prediction, testSet$Petal.Length)
+abline(a = 0, b = 1)     
